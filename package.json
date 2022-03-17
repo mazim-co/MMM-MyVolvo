@@ -1,0 +1,28 @@
+{
+  "name": "MMM-MyVolvo",
+  "version": "1.0.1",
+  "description": "MM plugin for Volvo car status with VOC",
+  "main": "MMM-MyVolvo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mazim-co/MMM-MyVolvo.git"
+  },
+  "keywords": [
+    "MagicMirror",
+    "volvo",
+    "MyVolvo",
+    "VolvoOnCall"
+  ],
+  "author": "mazim <mail@mazim.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mazim-co/MMM-MyVolvo/issues"
+  },
+  "homepage": "https://github.com/mazim-co/MMM-MyVolvo#readme",
+  "dependencies": {
+    "moment": "^2.22.2"
+  }
+}
