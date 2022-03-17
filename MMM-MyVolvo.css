@@ -1,13 +1,17 @@
 .VOC {
-  max-width:300px;
+  margin-top: 15px;
+  max-width:500px;
   text-align:left;
+  
 }
 
 .VOC .section {
+  
   margin-bottom: 5px;
   font-size: 16px;
   width: 100%;
-  color: #EEE;
+  
+  
 }
 
 .VOC .item {
@@ -22,8 +26,13 @@
 
 
 .VOC .section.info .name {
-  font-weight: bold;
-  font-size: 24px;
+  
+  font-size: 18px;
+  
+}
+
+.VOC .graphic {
+  width: 100%;
 }
 
 .VOC .section.status .content{
@@ -32,34 +41,48 @@
   justify-content: space-between;
   font-size:16px;
   max-width:100%;
+  color: #eee;
 }
 
 .VOC .section.status .bar {
-  order: 1;
-  width: 100%;
-  flex-basis:100%;
-  flex-grow:1;
-  background-color: #666;
-  position: relative;
+    order: 1;
+    width: 100%;
+    flex-basis: 100%;
+    flex-grow: 1;
+    background-color: #c8c9cb40;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 10px;
 }
 
+
 .VOC .section.status .guage {
-  background-color: #FF9;
+  background-color: #d5cece52;
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 20px;
 }
 
 .VOC .section.status .amount {
   text-align: right;
-  color:#EEE;
-  padding-right:5px;
+  line-height: 12px;
+  padding-right:8px;
+  color: white;
 }
 
 .VOC .section.status .level {
-  text-align: right;
-  color:#000;
-  padding-right:5px;
+
+    padding-right: 5px;
+    background: linear-gradient(to left, #6f7580, #b0b4bc91);
+    box-shadow: 0 3px 3px -5px #000, 0 2px 5px #3a3a3a;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
 }
 
 .VOC .section.status .range {
@@ -109,17 +132,20 @@
   background-color:#666;
   color:#000;
 }
-
+.VOC .section.trip .content:before {
+  content: "Last Trip:";
+  line-height:100%;
+}
 .VOC .section.trip .content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width:100%;
-  font-size: 12px;
-  background-color: #CDE;
-  border-radius: 6px;
-  padding:6px;
-  color: #000;
+  font-size: 14px;
+  color: #d5d5d5;
+  padding:5px;
+  border-top: 1px dotted dimgrey;
+  margin-top: 13px;
 }
 
 .VOC .section.trip .departure {
@@ -130,22 +156,21 @@
 
 .VOC .section.trip .arrival {
   order: 2;
-  width: 49%;
+  width: 45%;
   text-align: right;
-  border-left: 1px dashed #000;
+  /*border-left: 0.5px dotted dimgrey;*/
 }
 
 .VOC .section.trip .street {
-  font-weight: bold;
-  font-size: 14px;
+  
+  font-size: 16px;
 }
 
 .VOC .section.trip .city,
 .VOC .section.trip .time {
-  padding-left: 14px;
+  padding-left: 20px;
 }
 
-.VOC .section.trip .bit {
-  order: 3;
-  text-align:left;
+.VOC .section.postion {
+  display: none;
 }
