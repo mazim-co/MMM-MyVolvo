@@ -2,23 +2,18 @@
   margin-top: 15px;
   max-width:500px;
   text-align:left;
-  
-}
+  }
 
-.VOC .section {
-  
+.VOC .section {  
   margin-bottom: 5px;
   font-size: 16px;
   width: 100%;
-  
-  
 }
 
 .VOC .item {
   margin-bottom:5px;
   padding:0;
-  line-height:100%;
-}
+  line-height:100%;}
 
 .VOC .iconfy {
   line-height:100%;
@@ -26,9 +21,7 @@
 
 
 .VOC .section.info .name {
-  
   font-size: 18px;
-  
 }
 
 .VOC .graphic {
@@ -45,17 +38,16 @@
 }
 
 .VOC .section.status .bar {
-    order: 1;
-    width: 100%;
-    flex-basis: 100%;
-    flex-grow: 1;
-    background-color: #c8c9cb40;
-    position: relative;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    font-size: 10px;
+  order: 1;
+  width: 100%;
+  flex-basis: 100%;
+  flex-grow: 1;
+  background-color: #c8c9cb40;
+  position: relative;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-size: 10px;
 }
-
 
 .VOC .section.status .guage {
   background-color: #d5cece52;
@@ -73,16 +65,15 @@
 }
 
 .VOC .section.status .level {
-
-    padding-right: 5px;
-    background: linear-gradient(to left, #6f7580, #b0b4bc91);
-    box-shadow: 0 3px 3px -5px #000, 0 2px 5px #3a3a3a;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    text-align: center;
+  padding-right: 5px;
+  background: linear-gradient(to left, #6f7580, #b0b4bc91);
+  box-shadow: 0 3px 3px -5px #000, 0 2px 5px #3a3a3a;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;    
+  text-align: center;
 }
 
 .VOC .section.status .range {
@@ -114,7 +105,6 @@
   line-height:100%;
 }
 
-
 .VOC .section.notice .mark {
   display: inline-block;
   padding:2px 5px;
@@ -132,10 +122,12 @@
   background-color:#666;
   color:#000;
 }
+
 .VOC .section.trip .content:before {
   content: "Last Trip:";
   line-height:100%;
 }
+
 .VOC .section.trip .content {
   display: flex;
   flex-wrap: wrap;
@@ -161,8 +153,7 @@
   /*border-left: 0.5px dotted dimgrey;*/
 }
 
-.VOC .section.trip .street {
-  
+.VOC .section.trip .street {  
   font-size: 16px;
 }
 
@@ -172,5 +163,5 @@
 }
 
 .VOC .section.postion {
-  display: none;
+  /* display: none;*/
 }
