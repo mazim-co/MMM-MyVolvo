@@ -24,7 +24,7 @@ module.exports = NodeHelper.create({
   list: function() {
     exec("voc list", (e, sdo, sde)=>{
       if (e) {
-        console.log("[MyVolvo] ERROR(>list):", e.toString())
+        console.log("[VOC] ERROR(>list):", e.toString())
       } else {
         
         this.listResult(sdo)
@@ -47,7 +47,7 @@ module.exports = NodeHelper.create({
     if (this.carInfo.length > 0) {
       this.sendSocketNotification("INITIALIZED", this.carInfo)
     } else {
-      console.log("[MyVolvo] ERROR: No vehicle found. Check your account. Module stopped.")
+      console.log("[VOC] ERROR: No vehicle found. Check your account. Module stopped.")
     }
 
   },
@@ -56,7 +56,7 @@ module.exports = NodeHelper.create({
   scan: function() {
     exec("voc dashboard", (e, sdo, sde)=> {
       if (e) {
-        console.log("[MyVolvo] ERROR:", e.toString())
+        console.log("[VOC] ERROR:", e.toString())
       } else {
         this.scanResult(sdo)
         //this.sendSocketNotification("RESULT", sdo)
@@ -86,7 +86,7 @@ module.exports = NodeHelper.create({
     }
 
     if (Object.keys(result).length == 0) {
-      console.log("[MyVolvo] ERROR: No information could be retrieved.")
+      console.log("[VOC] ERROR: No information could be retrieved.")
       console.log(output)
     } else {
       this.sendSocketNotification("SCAN_RESULT", result)
@@ -140,7 +140,7 @@ module.exports = NodeHelper.create({
           this.tripResult(carId, JSON.parse(sdo))
         })
       } catch (e) {
-        console.log("[MyVolvo] ERROR:", e.toString())
+        console.log("[VOC] ERROR:", e.toString())
       }
     }
   },
