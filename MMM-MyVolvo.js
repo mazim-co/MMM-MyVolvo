@@ -14,11 +14,11 @@ Module.register("MMM-MyVolvo", {
       apiKey: ""
     },
     display: {
-      info: false,
-      graphic: "v90.png"
+      info: true,
+      graphic: "v90.png",
       position: false,
       status: true,
-      notice: false,
+      notice: true,
       trip: true,
     },
     icons: {
@@ -146,6 +146,14 @@ Module.register("MMM-MyVolvo", {
       var info = createElement("div", ["item", "name"], "Car", `${car.id} (${car.type})`)
       sec.appendChild(info)
       dom.appendChild(sec)
+     if (this.config.display.graphic) {
+      var sec = createElement("div"["section", "graphic"])
+      var image = createElement("img", ["image"])
+          image.src = '/modules/MMM-VolvoOnCall/graphics/' + this.config.display.graphic
+          image.className = "graphic"
+      sec.appendChild(image)
+      dom.appendChild(sec) 
+
     }
     if (this.config.display.position && data.hasOwnProperty("Position")) {
       var position = data["Position"]
