@@ -57,7 +57,7 @@ Following properties can be configured:
 | `info`                   		| Display the details of your car: car license plate, model and construction year. <br><br> **Type:** `boolean` <br> **Possible values:** `true` or `false` <br> **Default value:** `false`
 | `graphic`                     | Display a graphic of your Volvo. (see below _Volvo Graphic Gallery_). <br><br> **Type:** `string` <br> **Default value:** `"v90.png"`
 | `status`               		| Display the general information from your car: Fuel amount, Avg. Speed, Fuel Level ect. <br> ![](https://raw.githubusercontent.com/mazim-co/MMM-MyVolvo/master/gallery/status_example.png)<br><br> **Type:** `boolean` <br> **Possible values:** `true` or `false` <br> **Default value:** `true`
-| `notice`               		| Display details from vehicle status: Doors looked, Engine on/off, Tyre ok, Windows open/closed. <br> ![](https://raw.githubusercontent.com/mazim-co/MMM-MyVolvo/master/gallery/status_example.png)<br><br> **Type:** `boolean` <br> **Possible values:** `true` or `false` <br> **Default value:** `true`
+| `notice`               		| Display details from vehicle status: Doors looked, Engine on/off, Tyre ok, Windows open/closed. <br> ![](https://raw.githubusercontent.com/mazim-co/MMM-MyVolvo/master/gallery/notice_example.png)<br><br> **Type:** `boolean` <br> **Possible values:** `true` or `false` <br> **Default value:** `true`
 | `trip`              			| Display the last trip. Depature and Destination as well as the trip details. <br> ![](https://raw.githubusercontent.com/mazim-co/MMM-MyVolvo/master/gallery/trip_example.png)<br><br> **Type:** `boolean` <br> **Possible values:** `true` or `false` <br> **Default value:** `true`
 
 ## Volvo Graphic Gallery
