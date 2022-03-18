@@ -19,10 +19,13 @@ This module is based on the intital module from [eouia](https://github.com/eouia
 ## Requriements
 - Volvo Car owner with an **active Volvo ID and the Volvo Cars App**.
  - Works for all connected cars up to model year 2021, excluding the XC40 Recharge.
+ - For the moment it only works for cars registerd in Germany. A german license plate is requried (e.g. AB-CD 123).
 - Python 3.8 or higher.
 
 ## Installation
 _coming soon_
+### 1. Check (& Install) Python Version
+1. 
 
 
 ## Sample Config
@@ -61,10 +64,12 @@ Following properties can be configured:
 | `trip`              			| Display the last trip. Depature and Destination as well as the trip details. <br> ![](https://raw.githubusercontent.com/mazim-co/MMM-MyVolvo/master/gallery/trip_example.png)<br><br> **Type:** `boolean` <br> **Possible values:** `true` or `false` <br> **Default value:** `true`
 
 ## Volvo Graphic Gallery
-__Option 1:__ You can select your Volvo from the gallery folder.
-   * As in the sample config above, write the .png file into next to `graphic: "file.png"`
+__Option 1:__ You can select your Volvo from the [graphics folder](https://github.com/mazim-co/MMM-MyVolvo/tree/main/graphics).
+   * As in the sample config above, write the name of the .png file next to `graphic: "file.png"` 
 
-__Option 2:__ Upload your own graphic and save it in the graphic folder. You reference that as in Option
+   > **_NOTE:_**  Please access the folder to get the right name of the file from your graphic. For example in the overview it shows `XC90 Recharge` but the file is `xc90-hybrid.png`
+
+__Option 2:__ Upload your own graphic and save it in the graphic folder. You can reference that as described in Option 1.
 
 __Option 3:__ Hide the graphic by just leaving `graphic: ""` blank.
 
