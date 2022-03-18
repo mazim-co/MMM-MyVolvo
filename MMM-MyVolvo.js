@@ -7,23 +7,14 @@ Module.register("MMM-MyVolvo", {
     timestampFormat: "MMM D. HH:mm:ss",
     durationFormat: "HH:mm",
     iconify: "https://code.iconify.design/1/1.0.4/iconify.min.js", // if you are using other module which has `iconfy` already, set this to "null"
-    mapConfig: {
-      width: "100%",
-      height: "300px",
-      zoom: 15,
-      apiKey: ""
-    },
     display: {
       info: true,
       graphic: "v90.png",
-      position: false,
       status: true,
       notice: true,
       trip: true,
     },
-    icons: {
-      
-      
+    icons: {    
       "Fuel level": `<span class="iconify" data-icon="ic:outline-water-drop"></span> `,
       "Range": `<span class="iconify" data-icon="clarity:fuel-line"></span> `,
       "Fuel consumption": `<span class="iconify" data-icon="codicon:graph-line"></span> `,
@@ -155,19 +146,7 @@ Module.register("MMM-MyVolvo", {
       sec.appendChild(image)
       dom.appendChild(sec) 
     }
-    if (this.config.display.position && data.hasOwnProperty("Position")) {
-      var position = data["Position"]
-      var sec = createElement("div", ["position", "section"])
-      var map = createElement("iframe", ["map","content"])
-      map.style.width = this.config.mapConfig.width
-      map.style.height = this.config.mapConfig.height
-      map.frameborder = 0
-      map.style.border = 0
-      map.src = `https://www.google.com/maps/embed/v1/place?q=${position.lat},${position.long}&zoom=${this.config.mapConfig.zoom}&key=${this.config.mapConfig.apiKey}`
-      sec.appendChild(map)
-      dom.appendChild(sec)
-    }
-    if (this.config.display.status) {
+        if (this.config.display.status) {
       var sec = createElement("div", ["status", "section"])
       var content = createElement("div", ["content"])
       var bar = createElement("div", ["bar", "amount", "item"], "Fuel amount", this.units("L", data["Fuel amount"]))
