@@ -43,11 +43,30 @@ _coming soon_
 },
 ```
 
+
+## Configuration
+
+Following properties can be configured:
+
+
+| Option                       	| Description
+| ---------------------------- 	| -----------
+| `header`                     	| The header text to display <br><br> **Type:** `string` <br> **Default value:** `"My Volvo"`
+| `scanInterval`               	| The interval fetchting informations from that API. <br><br> **Type:** `string` <br> **Default value:** `10 * 60 * 1000` // 10 Minutes
+| `units`                      	| The metrics shown km/h, mp/h. <br><br> **Type:** `string` <br> **Possible values:** `metrics`, `us`, `imperial`, `kr` <br> **Default value:** `metrics`
+| `info`                   		| Display the details of your car: car license plate, model and construction year. <br><br> **Type:** `boolean` <br> **Possible values:** `true` or `false` <br> **Default value:** `false`
+| `graphic`                     | Display a graphic of your Volvo. (see below _Volvo Graphic Gallery_). <br><br> **Type:** `string` <br> **Default value:** `"v90.png"`
+| `status`               		| Display the general information from your car: Fuel amount, Avg. Speed, Fuel Level ect. <br> ![](https://raw.githubusercontent.com/mazim-co/MMM-MyVolvo/master/gallery/status_example.png)<br><br> **Type:** `boolean` <br> **Possible values:** `true` or `false` <br> **Default value:** `true`
+| `notice`               		| Display details from vehicle status: Doors looked, Engine on/off, Tyre ok, Windows open/closed. <br> ![](https://raw.githubusercontent.com/mazim-co/MMM-MyVolvo/master/gallery/status_example.png)<br><br> **Type:** `boolean` <br> **Possible values:** `true` or `false` <br> **Default value:** `true`
+| `trip`              			| Display the last trip. Depature and Destination as well as the trip details. <br> ![](https://raw.githubusercontent.com/mazim-co/MMM-MyVolvo/master/gallery/trip_example.png)<br><br> **Type:** `boolean` <br> **Possible values:** `true` or `false` <br> **Default value:** `true`
+
 ## Volvo Graphic Gallery
-1. Option: You can select your Volvo from the gallery folder.
- * As in the sample config above, write the .png file into next to `graphic: "file.png"`
-2. Option: Upload your own graphic and save it in the graphic folder. You reference that as in Option.
-3. Option: Hide the graphic by just leaving `graphic: ""` blank.
+__Option 1:__ You can select your Volvo from the gallery folder.
+   * As in the sample config above, write the .png file into next to `graphic: "file.png"`
+
+__Option 2:__ Upload your own graphic and save it in the graphic folder. You reference that as in Option
+
+__Option 3:__ Hide the graphic by just leaving `graphic: ""` blank.
 
 ![](https://raw.githubusercontent.com/mazim-co/MMM-MyVolvo/master/gallery/model_overview.png)
 
