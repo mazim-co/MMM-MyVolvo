@@ -24,8 +24,6 @@ This module is based on the intital module from [eouia](https://github.com/eouia
 
 ## Installation
 _coming soon_
-### 1. Check (& Install) Python Version
-1. 
 
 
 ## Sample Config
