@@ -34,7 +34,7 @@ module.exports = NodeHelper.create({
 
 
   listResult: function(output) {
-    var re = /^([^+_=*?@#$%&()'"|â„;:{}.,`~<>}{][^\\]{1,10})\s\(([^\)]+)\)\s([^]+)$/gm
+    var re = /^([^+_=*?@#$%&()'"|â„;:{}.,`~<>}{][^\\]{1,10})\s\(([^\)]+)\)\s([^ ]+)$/gm
     var matches = null
     var result = []
     while (matches = re.exec(output)) {
