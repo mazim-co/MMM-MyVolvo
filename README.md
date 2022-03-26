@@ -19,7 +19,7 @@ This module is based on the initial module from [eouia](https://github.com/eouia
 ## Requirements
 - Volvo Car owner with an **active Volvo ID and the Volvo Cars App**.
  - Works for all connected cars up to model year 2021, excluding the XC40 Recharge.
- - For the moment it only works for cars registered in Germany. A german license plate is required (e.g. AB-CD 123, or AB-CD 123E).
+ - For the moment it only works for cars registered in Germany, Netherlands and Sweden. A license plate from these countries is required. (Possibly more countries but couldn't test it.)
 - Python 3.8 or higher.
 
 ## Installation
