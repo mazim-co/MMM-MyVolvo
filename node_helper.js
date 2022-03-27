@@ -69,7 +69,7 @@ module.exports = NodeHelper.create({
       return value.id
     })
     var result = []
-    var re = /^([^\\]{1,12})\s([\w\s]+)\:\s(.+)$/gm
+    var re = /^([^\\]{1,9})\s([\w\s]+)\:\s(.+)$/gm    
     var matches = null
     while (matches = re.exec(output)) {
       var idx = carIndex.indexOf(matches[1].trim())
