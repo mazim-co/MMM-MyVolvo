@@ -34,7 +34,7 @@ module.exports = NodeHelper.create({
 
 
   listResult: function(output) {
-    var re = /^([^+_=*?@#$%&()'"|â„;:{}.,`~<>}{][^\\]{1,10})\s\(([^\)]+)\)\s([^ ]+)$/gm
+    var re = /^([^\\]{1,12})\s\(([^\)]+)\)\s([^ ]+)$/gm
     var matches = null
     var result = []
     while (matches = re.exec(output)) {
@@ -69,7 +69,7 @@ module.exports = NodeHelper.create({
       return value.id
     })
     var result = []
-    var re = /^([^+_=*?@#$%&()'"|â„;:{}.,`~<>}{][^\\]{1,10})\s([\w\s]+)\:\s(.+)$/gm
+    var re = /^([^\\]{1,12})\s([\w\s]+)\:\s(.+)$/gm
     var matches = null
     while (matches = re.exec(output)) {
       var idx = carIndex.indexOf(matches[1].trim())
