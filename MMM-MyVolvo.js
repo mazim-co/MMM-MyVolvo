@@ -1,8 +1,8 @@
 Module.register("MMM-MyVolvo", {
   defaults: {
     debug: false,
-    scanInterval: 1000 * 60 * 30,
-    refreshInterval: 100000 * 60 * 30,
+    scanInterval: 1000 * 60 * 10, // 10 Minutes
+    refreshInterval: 1000 * 60 * 10, // 10 Minutes
     units: "metric", // "metric", "us", "imperial", "kr" could be available
     timestampFormat: "MMM D. HH:mm:ss",
     durationFormat: "HH:mm",

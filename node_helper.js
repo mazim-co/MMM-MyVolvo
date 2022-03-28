@@ -34,7 +34,7 @@ module.exports = NodeHelper.create({
 
 
   listResult: function(output) {
-    var re = /^([^\\]{1,12})\s\(([^\)]+)\)\s([^ ]+)$/gm
+    var re = /^([^\\]{1,12})\s\(([^\)]+)\)\s([^ ]+)$/gm //voc list regex
     var matches = null
     var result = []
     while (matches = re.exec(output)) {
@@ -69,7 +69,7 @@ module.exports = NodeHelper.create({
       return value.id
     })
     var result = []
-    var re = /^([^\\]{1,9})\s([\w\s]+)\:\s(.+)$/gm    
+    var re = /^([^\\]{1,9})\s([\w\s]+)\:\s(.+)$/gm    //voc dashboard regex
     var matches = null
     while (matches = re.exec(output)) {
       var idx = carIndex.indexOf(matches[1].trim())
@@ -95,7 +95,7 @@ module.exports = NodeHelper.create({
 
   reformValue: function(key, value) {
     if (key == "Position") {
-      var re = /([0-9\.\-]+)\,\s([0-9\.\-]+),\s\'([^\']+)\'/
+      var re = /([0-9\.\-]+)\,\s([0-9\.\-]+),\s\'([^\']+)\'/  //voc coordinates regex
       var matches = re.exec(value)
       if (matches) {
         return {
